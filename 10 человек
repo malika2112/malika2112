@@ -1,0 +1,11 @@
+with open('malika.txt', 'w') as file:
+    for i in range(10):
+        print(f"Введите данные для человека {i + 1}:")
+        first_name = input("Имя: ")
+        last_name = input("Фамилия: ")
+        
+        file.write(f"Имя: {first_name}, Фамилия: {last_name}\n")
+
+print("Данные о 10 человеках успешно сохранены в файл 'malika.txt'.")
+
+
